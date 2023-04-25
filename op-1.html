@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    class stur {
+        allrecord() {
+            let a = parseInt(prompt('Enter physics marks :'))
+            let b = parseInt(prompt('Enter chemistry marks :'))
+            let c = parseInt(prompt('Enter biology marks :'))
+            let d = parseInt(prompt('Enter mathematics marks :'))
+            let e = parseInt(prompt('Enter computer marks :'))
+
+            let percentage = a + b + c + d + e / 500 * 100
+
+            if (percentage >= 90) {
+                document.write("<h2>Grade A</h2>");
+            }
+            else if (percentage >= 80) {
+                document.write("<h2>Grade B</h2>");
+            }
+            else if (percentage >= 70) {
+                document.write("<h2>Grade C</h2>");
+            }
+            else if (percentage >= 60) {
+                document.write("<h2>Grade D</h2>");
+            }
+            else if (percentage >= 50) {
+                document.write("<h2>Grade E</h2>");
+            }
+            else {
+                document.write("<h2>Grade F</h2>");
+            }
+        }
+    }
+
+    let ans = new stur;
+    ans.allrecord();
+
+</script>

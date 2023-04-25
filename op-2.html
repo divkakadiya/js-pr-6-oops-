@@ -1,0 +1,52 @@
+<table border='1'>
+    <tr>
+        <td>Name</td>
+        <td>E-mail</td>
+        <td>Phone</td>
+    </tr>
+
+    <tbody id="record"></tbody>
+</table>
+
+<script type="text/javascript">
+    let tbl = ''
+    class rec {
+        constructor() {
+            let data = [
+                {
+                    name: "jay",
+                    email: "jay@gmail.com",
+                    phone: "12345",
+                },
+                {
+                    name: "ajay",
+                    email: "ajay@gmail.com",
+                    phone: "12345",
+                },
+                {
+                    name: "vijay",
+                    email: "vijay@gmail.com",
+                    phone: "12345",
+                },
+                {
+                    name: "ashish",
+                    email: "ashish@gmail.com",
+                    phone: "12345",
+                },
+            ];
+            data.map((val) => {
+                tbl += `
+            <tr>
+                <td>${val.name}</td>    
+                <td>${val.email}</td>    
+                <td>${val.phone}</td>    
+            </tr>
+            `
+            })
+            document.getElementById('record').innerHTML = tbl;
+        }
+    }
+
+    let ans = new rec;
+    ans.data();
+</script>
